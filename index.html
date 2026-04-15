@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ko"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1">&lt;title&gt;라온반 수어교실&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>* { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body { background: #e8f4fd; font-family: 'Segoe UI', sans-serif; color: #1e3a5f; max-width: 480px; margin: 0 auto; min-height: 100vh; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* HEADER */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#header { background: #3b82f6; color: #fff; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#header span { font-size: 16px; font-weight: 700; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#theme-btn { background: rgba(255,255,255,0.25); border: none; border-radius: 8px; padding: 6px 12px; color: #fff; font-weight: 600; cursor: pointer; font-size: 13px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* NAV */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#nav { background: #fff; border-bottom: 2px solid #3b82f6; position: sticky; top: 48px; z-index: 99; display: flex; overflow-x: auto; white-space: nowrap; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#nav button { flex-shrink: 0; padding: 10px 12px; border: none; background: #fff; color: #1e3a5f; font-size: 12px; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#nav button.active { background: #3b82f6; color: #fff; font-weight: 700; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* BODY */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#body { padding: 16px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* CARD */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card { background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* HERO */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero { border-radius: 14px; overflow: hidden; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero-inner { background: #3b82f6; color: #fff; display: flex; align-items: stretch; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-side { width: 72px; flex-shrink: 0; background: rgba(0,0,0,0.15); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 10px 4px; font-size: 11px; color: rgba(255,255,255,0.9); text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-side .emoji { font-size: 22px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-side .title { font-weight: 700; line-height: 1.3; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-side .sub { font-size: 10px; opacity: 0.8; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero-center { flex: 1; text-align: center; padding: 20px 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero-center .big-emoji { font-size: 34px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero-center h1 { font-size: 18px; font-weight: 700; margin-top: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#hero-center p { font-size: 12px; opacity: 0.85; margin-top: 4px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* TODAY WORD */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#today-word { font-size: 28px; font-weight: 800; color: #3b82f6; text-align: center; padding: 12px 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* MENU LIST */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.menu-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #3b82f620; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.menu-item .icon { font-size: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.menu-item .name { font-weight: 600; font-size: 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.menu-item .desc { font-size: 12px; opacity: 0.7; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* LESSON LIST */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lesson-card { display: flex; align-items: center; gap: 12px; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lesson-emoji-box { width: 80px; height: 56px; border-radius: 8px; background: #3b82f622; display: flex; align-items: center; justify-content: center; font-size: 30px; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lesson-title { font-weight: 600; font-size: 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lesson-sub { font-size: 12px; opacity: 0.6; margin-top: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.no-video { font-size: 12px; color: #1d4ed8; margin-top: 2px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* DETAIL */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.detail-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.back-btn { background: transparent; color: #3b82f6; border: 1.5px solid #3b82f6; border-radius: 8px; padding: 6px 14px; font-weight: 600; cursor: pointer; font-size: 13px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.big-emoji-box { width: 100%; height: 160px; border-radius: 12px; background: #3b82f622; display: flex; align-items: center; justify-content: center; font-size: 72px; margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.yt-btn { display: block; background: #FF0000; color: #fff; border-radius: 10px; padding: 12px; text-align: center; font-weight: 700; font-size: 15px; text-decoration: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.no-video-box { background: #e8f4fd; border-radius: 10px; padding: 20px; text-align: center; font-size: 14px; opacity: 0.7; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* DICT */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#dict-open { display: block; background: #3b82f6; color: #fff; border-radius: 12px; padding: 14px; text-align: center; font-weight: 700; font-size: 16px; text-decoration: none; margin-top: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.dict-step { font-size: 14px; line-height: 1.8; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ADVANCED */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#advanced-placeholder { text-align: center; padding: 40px 16px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* THEME OVERLAY */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#theme-overlay { display: none; position: fixed; top:0; left:0; right:0; bottom:0; background: #0008; z-index: 200; align-items: flex-end; justify-content: center; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#theme-overlay.open { display: flex; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#theme-sheet { background: #fff; border-radius: 20px 20px 0 0; padding: 24px; width: 100%; max-width: 480px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#theme-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-btn { border-radius: 14px; padding: 18px 8px; font-weight: 700; font-size: 15px; cursor: pointer; color: #fff; border: 3px solid transparent; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-btn.current { border-color: #fff; outline: 3px solid currentColor; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;span&gt;🤟 라온반 수어교실&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="theme-btn" onclick="openTheme()"&gt;🎨 테마&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button class="active" onclick="goPage('home')"&gt;🏠 홈&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="goPage('beginner')"&gt;📗 초급 수어&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="goPage('vocab')"&gt;📘 수어 어휘&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="goPage('advanced')"&gt;📙 중급 어휘&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="goPage('dict')"&gt;📖 수어누리사전&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="body"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- THEME OVERLAY --&gt;</p>
+<p class="p1">&lt;div id="theme-overlay" onclick="closeTheme()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="theme-sheet" onclick="event.stopPropagation()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-weight:700;font-size:16px;margin-bottom:12px"&gt;🎨 테마 선택&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="theme-grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const THEMES = [</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"하늘 💙", bg:"#e8f4fd", primary:"#3b82f6", accent:"#1d4ed8", card:"#fff", text:"#1e3a5f" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"딸기 🍓", bg:"#fde8f0", primary:"#ec4899", accent:"#be185d", card:"#fff", text:"#5f1e3a" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"숲 🌿",<span class="Apple-converted-space">  </span>bg:"#e8fdf0", primary:"#22c55e", accent:"#15803d", card:"#fff", text:"#1e5f3a" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"보라 💜", bg:"#f0e8fd", primary:"#a855f7", accent:"#7e22ce", card:"#fff", text:"#3a1e5f" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"해 🌞",<span class="Apple-converted-space">  </span>bg:"#fdf8e8", primary:"#f59e0b", accent:"#b45309", card:"#fff", text:"#5f4a1e" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ name:"밤 🌙",<span class="Apple-converted-space">  </span>bg:"#1e1e2e", primary:"#818cf8", accent:"#6366f1", card:"#2d2d3f", text:"#e2e8f0" },</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">const BEGINNER = [</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:1,<span class="Apple-converted-space">  </span>title:"1강. 한국수어 조망하기", desc:"책 속 사진 참고 (동영상 링크 없음)", url:"", emoji:"🤟" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:2,<span class="Apple-converted-space">  </span>title:"2강. 인사", <span class="Apple-converted-space">      </span>desc:"22쪽", url:"https://youtu.be/qUl7zGUuj1o?si=VinhZsOv8MnRZsvz", emoji:"👋" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:3,<span class="Apple-converted-space">  </span>title:"3강. 소개", <span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/99c0BCzDB4c?si=9g3f4mjeRr0pZ6TA", emoji:"🙋" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:4,<span class="Apple-converted-space">  </span>title:"4강. 물건", <span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/Hx_y6ZkxP-w?si=q96aFWYiX6sHRC8N", emoji:"🎒" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:5,<span class="Apple-converted-space">  </span>title:"5강. 하루 일과",<span class="Apple-converted-space">  </span>desc:"", url:"https://youtu.be/ucypOmvNxqg?si=nw5PGnXeFeVOrXwt", emoji:"📅" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:6,<span class="Apple-converted-space">  </span>title:"6강. 날씨", <span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/Sj54s42QkGI?si=0UJcAj1nhB_z2scT", emoji:"🌦️" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:7,<span class="Apple-converted-space">  </span>title:"7강. 음식", <span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/C8T1VongutU?si=Z7Mw9bdckWAVLR5U", emoji:"🍚" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:8,<span class="Apple-converted-space">  </span>title:"8강. 시간", <span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/sVIHsU7C40Y?si=JS6-DhF1mbao13eG", emoji:"⏰" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:9,<span class="Apple-converted-space">  </span>title:"9강. 위치와 장소",desc:"", url:"https://youtu.be/XmRVGPu32j4?si=tz0puMXc5e3LkPZG", emoji:"📍" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:10, title:"10강. 경험",<span class="Apple-converted-space">      </span>desc:"", url:"https://youtu.be/t6mi9haerww?si=5k6rfWsFeWxRu4zc", emoji:"💭" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:11, title:"11강. 공간과 활동",desc:"",url:"https://youtu.be/EQ7px1siGMY?si=fwBFFUemk-CjP8uF", emoji:"🏃" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:12, title:"12강. 관용 표현", desc:"", url:"https://youtu.be/sAOTz2DANek?si=ywdJG0m_78WrEL5W", emoji:"💬" },</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">const VOCAB = [</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:1,<span class="Apple-converted-space">  </span>title:"1과. 만남", url:"https://youtu.be/4lNluYfqdMQ?si=DdgIKCCZckzJ8EJn", emoji:"🤝" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:2,<span class="Apple-converted-space">  </span>title:"2과. 소개", url:"https://youtu.be/m6HwuNueBIA?si=TkAs3zJVnl58hdDU", emoji:"🙋" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:3,<span class="Apple-converted-space">  </span>title:"3과. 시간", url:"https://youtu.be/PVGC8GgcMmQ?si=HD2mIwhzStgC4L9t", emoji:"⏰" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:4,<span class="Apple-converted-space">  </span>title:"4과. 날씨", url:"https://youtu.be/mx4u2u8odYc?si=qeTDCUP_0nWykOtV", emoji:"🌦️" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:5,<span class="Apple-converted-space">  </span>title:"5과. 물건", url:"https://youtu.be/BHxa_44b1So?si=aw8LcYDBpkrldn_o", emoji:"🎒" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:6,<span class="Apple-converted-space">  </span>title:"6과. 색깔", url:"https://youtu.be/2ZAyMJLKzCA?si=4v9TX4jZI3QZLGDG", emoji:"🎨" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:7,<span class="Apple-converted-space">  </span>title:"7과. 음식", url:"https://youtu.be/d5eaiLRF2oY?si=WtOSzABjAGr1pUWi", emoji:"🍚" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:8,<span class="Apple-converted-space">  </span>title:"8과. 건강", url:"https://youtu.be/ROwBQgFjWRI?si=a8BLILuJK1hVazXi", emoji:"💊" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:9,<span class="Apple-converted-space">  </span>title:"9과. 교통", url:"https://youtu.be/7wKbvCIDWY8?si=m5eqBMsYVqHn-fIR", emoji:"🚌" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:10, title:"10과. 사회", url:"https://youtu.be/c6obXsWtC00?si=L8P951TQzsOgmIRl", emoji:"🏙️" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:11, title:"11과. 문화", url:"https://youtu.be/LyPz0D3FBEk?si=ZHv7Ma0ThGKiEIew", emoji:"🎭" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:12, title:"12과. 교육", url:"https://youtu.be/GpMcIXPeGH4?si=ILgpTs77xnpC5iPK", emoji:"📚" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:13, title:"13과. 정치", url:"https://youtu.be/cCHZJ0ZQVjE?si=pVw_Yot-HJiX0su1", emoji:"🏛️" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:14, title:"14과. 경제", url:"https://youtu.be/T3TAR5ftNl4?si=7VUFhfg15FOrC9B3", emoji:"💰" },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ id:15, title:"15과. 생활", url:"https://youtu.be/gFO1_fbu2fA?si=0J7IPnMFKFphv7Ng", emoji:"🏠" },</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">let themeIdx = 0;</p>
+<p class="p1">let currentPage = 'home';</p>
+<p class="p2"><br></p>
+<p class="p1">function applyTheme() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t = THEMES[themeIdx];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.body.style.background = t.bg;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.body.style.color = t.text;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('header').style.background = t.primary;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('theme-btn').style.background = 'rgba(255,255,255,0.25)';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const nav = document.getElementById('nav');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.style.borderBottomColor = t.primary;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.style.background = t.card;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('#nav button').forEach(b =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>b.style.background = b.classList.contains('active') ? t.primary : t.card;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>b.style.color = b.classList.contains('active') ? '#fff' : t.text;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('theme-sheet').style.background = t.card;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('theme-sheet').style.color = t.text;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>buildThemeGrid();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function buildThemeGrid() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const grid = document.getElementById('theme-grid');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>THEMES.forEach((th, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const btn = document.createElement('button');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.className = 'theme-btn' + (i === themeIdx ? ' current' : '');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.style.background = th.primary;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.style.color = '#fff';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (i === themeIdx) btn.style.boxShadow = `0 0 0 3px ${th.accent}`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent = th.name;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.onclick = () =&gt; { themeIdx = i; closeTheme(); applyTheme(); render(); };</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function openTheme() { document.getElementById('theme-overlay').classList.add('open'); }</p>
+<p class="p1">function closeTheme() { document.getElementById('theme-overlay').classList.remove('open'); }</p>
+<p class="p2"><br></p>
+<p class="p1">function getYTId(url) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!url) return null;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const m = url.match(/(?:youtu\.be\/|v=|embed\/)([^&amp;?/]+)/);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return m ? m[1] : null;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function todayWord() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const words = ["안녕하세요","감사합니다","사랑해요","친구","학교","밥 먹었어요?"];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return words[new Date().getDate() % words.length];</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function card(content, extra='') {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return `&lt;div class="card" ${extra}&gt;${content}&lt;/div&gt;`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderHome() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t = THEMES[themeIdx];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="hero-inner" style="background:${t.primary}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-side"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="emoji"&gt;🌈&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="title"&gt;수어반&lt;br/&gt;모집중&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="sub"&gt;매주 화·목&lt;br/&gt;점심시간&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="emoji" style="font-size:18px;margin-top:4px"&gt;🐻&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="hero-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="big-emoji"&gt;🤟&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;라온반 수어교실&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;함께 배우는 한국 수어!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-side"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="emoji" style="font-size:18px"&gt;🍀&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="title"&gt;라온반&lt;br/&gt;수어반&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="sub"&gt;손으로 하는&lt;br/&gt;나의 이야기&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="emoji" style="font-size:18px;margin-top:4px"&gt;✨&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-weight:700;font-size:15px;margin-bottom:8px"&gt;✨ 오늘의 수어 단어&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="today-word" style="color:${t.primary}"&gt;"${todayWord()}"&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-size:13px;opacity:0.7;text-align:center"&gt;수어누리사전에서 영상을 찾아봐요!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-weight:700;font-size:15px;margin-bottom:8px"&gt;🗺️ 메뉴 안내&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>${[["📗","초급 수어","1~12강 강의 영상"],["📘","수어 어휘","1~15과 어휘 영상"],["📙","중급 어휘","준비 중"],["📖","수어누리사전","단어 검색"]].map(([ic,nm,ds])=&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="icon"&gt;${ic}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;&lt;div class="name"&gt;${nm}&lt;/div&gt;&lt;div class="desc"&gt;${ds}&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderLessonList(lessons, title, icon) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t = THEMES[themeIdx];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-weight:700;font-size:16px;margin-bottom:14px"&gt;${icon} ${title}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${lessons.map(l =&gt; card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="lesson-card" onclick="renderLessonDetail(${JSON.stringify(l).replace(/"/g,'&amp;quot;')}, '${currentPage}')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="lesson-emoji-box" style="background:${t.primary}22"&gt;${l.emoji||'🤟'}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="lesson-title"&gt;${l.title}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>${l.desc ? `&lt;div class="lesson-sub"&gt;${l.desc}&lt;/div&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>${!l.url ? `&lt;div class="no-video" style="color:${t.accent}"&gt;영상 없음&lt;/div&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderLessonDetail(l, fromPage) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t = THEMES[themeIdx];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const ytId = getYTId(l.url);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('body').innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detail-top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="back-btn" style="color:${t.primary};border-color:${t.primary}" onclick="goPage('${fromPage}')"&gt;← 목록으로&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-weight:700;font-size:17px;margin-bottom:8px"&gt;${l.title}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>${l.desc ? `&lt;div style="font-size:13px;opacity:0.7;margin-bottom:10px"&gt;${l.desc}&lt;/div&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>${ytId</p>
+<p class="p1"><span class="Apple-converted-space">        </span>? `&lt;div class="big-emoji-box" style="background:${t.primary}22"&gt;${l.emoji||'🤟'}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">           </span>&lt;a class="yt-btn" href="${l.url}" target="_blank" rel="noopener noreferrer"&gt;▶ 유튜브에서 보기&lt;/a&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">        </span>: `&lt;div class="no-video-box" style="background:${t.bg}"&gt;📖 영상 없음 — 교재를 참고해 주세요!&lt;/div&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderDict() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t = THEMES[themeIdx];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-weight:700;font-size:16px;margin-bottom:14px"&gt;📖 수어누리사전&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="text-align:center;padding:16px 0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:56px;margin-bottom:16px"&gt;🔍&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-weight:700;font-size:17px;margin-bottom:8px"&gt;국립국어원 수어누리사전&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:14px;opacity:0.7;margin-bottom:8px;line-height:1.6"&gt;수어 단어를 검색하고&lt;br/&gt;영상으로 확인할 수 있어요!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a id="dict-open" href="https://ksldict.korean.go.kr/kslserv/" target="_blank" rel="noopener noreferrer" style="background:${t.primary}"&gt;🌐 수어누리사전 열기&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-weight:700;margin-bottom:6px"&gt;💡 이렇게 사용해요&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="dict-step"&gt;1. 위 버튼을 눌러 사전을 열어요&lt;br/&gt;2. 검색창에 찾고 싶은 단어를 입력해요&lt;br/&gt;3. 수어 영상으로 확인해요!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderAdvanced() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>${card(`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="advanced-placeholder"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:40px;margin-bottom:12px"&gt;🚧&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-weight:700;font-size:16px;margin-bottom:8px"&gt;준비 중이에요!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:14px;opacity:0.7"&gt;중급 어휘 자료는 곧 업데이트될 예정이에요.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function goPage(page) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>currentPage = page;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('#nav button').forEach((b, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const pages = ['home','beginner','vocab','advanced','dict'];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>b.classList.toggle('active', pages[i] === page);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>applyTheme();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function render() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const body = document.getElementById('body');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (currentPage === 'home') <span class="Apple-converted-space">    </span>body.innerHTML = renderHome();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>else if (currentPage === 'beginner') body.innerHTML = renderLessonList(BEGINNER, '초급 수어', '📗');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>else if (currentPage === 'vocab')<span class="Apple-converted-space">    </span>body.innerHTML = renderLessonList(VOCAB, '수어 어휘', '📘');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>else if (currentPage === 'advanced') body.innerHTML = renderAdvanced();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>else if (currentPage === 'dict') <span class="Apple-converted-space">    </span>body.innerHTML = renderDict();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// init</p>
+<p class="p1">applyTheme();</p>
+<p class="p1">render();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
