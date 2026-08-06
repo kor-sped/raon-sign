@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>내 말로! 지원 · Support</title>
+<style>
+  :root{
+    --ink:#26302A; --sub:#6B7A70; --green:#2E8B57; --line:#DDE5DE;
+    --paper:#F2F6F1; --card:#FFFFFF; --blue:#2F6BB3; --amber:#E8A13A;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    line-height:1.75; padding:0 20px 80px;
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+  header{padding:48px 0 24px; border-bottom:2px solid var(--green); margin-bottom:32px;}
+  .app{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  .app h1{font-size:1.6rem; margin:0; letter-spacing:-.02em;}
+  .app span{font-size:.85rem; color:var(--sub);}
+  .lang{display:flex; gap:8px; margin-top:18px;}
+  .lang a{
+    font-size:.85rem; font-weight:700; text-decoration:none; padding:7px 16px;
+    border-radius:999px; border:1.5px solid var(--line); color:var(--sub); background:var(--card);
+  }
+  .lang a:hover{border-color:var(--green); color:var(--green);}
+  h2{font-size:1.15rem; margin:40px 0 14px; padding-left:12px; border-left:4px solid var(--green);}
+  p{margin:10px 0;}
+  .steps{display:flex; flex-direction:column; gap:12px; margin:18px 0;}
+  .step{
+    background:var(--card); border:1.5px solid var(--line); border-radius:14px;
+    padding:16px 20px; display:flex; gap:14px; align-items:flex-start;
+  }
+  .num{
+    flex:0 0 30px; height:30px; border-radius:50%; background:var(--green); color:#fff;
+    font-weight:800; font-size:.9rem; display:flex; align-items:center; justify-content:center;
+  }
+  .step strong{display:block; margin-bottom:2px;}
+  .step small{color:var(--sub); font-size:.9rem; line-height:1.6;}
+  details{
+    background:var(--card); border:1.5px solid var(--line); border-radius:14px;
+    padding:14px 20px; margin:10px 0;
+  }
+  details summary{cursor:pointer; font-weight:700; font-size:.98rem;}
+  details p{margin:12px 0 4px; font-size:.94rem; color:var(--ink);}
+  .contact{
+    background:var(--card); border:1.5px solid var(--green); border-radius:14px;
+    padding:20px 22px; margin:24px 0;
+  }
+  code{background:#EEF4FB; padding:2px 6px; border-radius:5px; font-size:.9em;}
+  a.link{color:var(--blue);}
+  hr{border:none; border-top:1px solid var(--line); margin:64px 0 40px;}
+  footer{margin-top:48px; font-size:.85rem; color:var(--sub); text-align:center;}
+  section[lang="en"] h2{border-left-color:var(--blue);}
+  section[lang="en"] .num{background:var(--blue);}
+  section[lang="en"] .contact{border-color:var(--blue);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="app">
+    <h1>내 말로!</h1>
+    <span>덮고 · 기억으로 · 내 문장</span>
+  </div>
+  <p style="margin:10px 0 0; font-size:.9rem; color:var(--sub);">지원 페이지 · Support</p>
+  <div class="lang">
+    <a href="#ko">한국어</a>
+    <a href="#en">English</a>
+  </div>
+</header>
+
+<section id="ko" lang="ko">
+
+<h2>어떻게 사용하나요?</h2>
+<div class="steps">
+  <div class="step">
+    <div class="num">1</div>
+    <div><strong>원문을 그대로 적어요</strong>
+    <small>교과서나 책에서 중요하다고 생각한 문장을 골라 옮겨 적습니다. 무엇이 중요한 문장인지 스스로 고르는 것부터가 공부입니다.</small></div>
+  </div>
+  <div class="step">
+    <div class="num">2</div>
+    <div><strong>덮고 내 말로 써요</strong>
+    <small>버튼을 누르면 원문이 화면에서 가려집니다. 기억나는 대로, 나라면 어떻게 말할지 씁니다. 안 보고 쓸수록 좋습니다.</small></div>
+  </div>
+  <div class="step">
+    <div class="num">3</div>
+    <div><strong>비교해요</strong>
+    <small>원문과 내 문장이 얼마나 달라졌는지 확인해 줍니다. 단어만 바꾸었다면 알려 주고, 문장 구조까지 바꾸었다면 칭찬해 줍니다.</small></div>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<details>
+  <summary>연습 기록이 사라졌어요.</summary>
+  <p>이 앱은 인터넷 서버를 쓰지 않고 기록을 기기 안에만 저장합니다. 그래서 앱을 삭제하거나 기기를 초기화하면 기록도 함께 지워지며, 복구할 수 없습니다. 중요한 기록은 '기록' 탭의 공유하기로 미리 내보내 두시기를 권합니다.</p>
+</details>
+
+<details>
+  <summary>다른 기기에서도 내 기록을 볼 수 있나요?</summary>
+  <p>기록은 각 기기에만 저장되므로 자동으로 옮겨지지는 않습니다. 다른 기기로 보내고 싶다면 '기록' 탭 → 선생님께 기록 보내기 → 공유하기를 이용하세요.</p>
+</details>
+
+<details>
+  <summary>선생님께 어떻게 보내나요?</summary>
+  <p>'기록' 탭에서 '선생님께 기록 보내기'를 누르고, 별명을 입력한 뒤 보낼 분량을 고릅니다. '내보내기 코드 만들기'를 누른 다음 '공유하기'를 누르면 에어드롭·메시지·메일 등으로 보낼 수 있습니다.</p>
+</details>
+
+<details>
+  <summary>선생님은 받은 기록을 어떻게 보나요?</summary>
+  <p>선생님도 같은 앱을 설치한 뒤 '함께' 탭 → 선생님 화면에서 학생이 보낸 코드를 붙여넣고 '가져오기'를 누르면 됩니다. 학생별로 정리되어 표시됩니다.</p>
+</details>
+
+<details>
+  <summary>보호자는 아이의 연습을 어떻게 확인하나요?</summary>
+  <p>아이의 기기에서 '함께' 탭 → 보호자 화면을 열면 연습 횟수와 최근 기록 요약을 볼 수 있습니다. 자세한 내용은 '기록' 탭에서 함께 보실 수 있습니다.</p>
+</details>
+
+<details>
+  <summary>결과 판정이 너무 짜거나 후한 것 같아요.</summary>
+  <p>이 앱은 원문과 겹치는 어절의 비율, 그리고 연속으로 똑같이 이어진 부분의 길이를 함께 봅니다. 설명문에서는 핵심 낱말이 겹치는 것이 자연스러우므로, 낱말이 겹쳐도 문장의 구조가 달라졌다면 좋은 평가가 나옵니다. 판정은 참고용이며, 다시 써 보는 과정 자체가 공부입니다.</p>
+</details>
+
+<details>
+  <summary>개인정보를 수집하나요?</summary>
+  <p>수집하지 않습니다. 회원가입과 로그인이 없고, 광고와 인앱 결제도 없습니다. 자세한 내용은 개인정보 처리방침을 확인해 주세요.</p>
+</details>
+
+<div class="contact">
+  <p style="margin:0 0 6px"><strong>문의</strong></p>
+  <p style="margin:0">앱에 관한 문의나 개선 의견은 아래로 보내 주세요.<br>
+  <strong>이메일:</strong> <code>sonjit4@gmail.com</code></p>
+</div>
+
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+
+<h2>How to use</h2>
+<div class="steps">
+  <div class="step">
+    <div class="num">1</div>
+    <div><strong>Write down the original sentence</strong>
+    <small>Choose a sentence you think matters from a textbook or book and copy it exactly. Deciding what matters is already part of the learning.</small></div>
+  </div>
+  <div class="step">
+    <div class="num">2</div>
+    <div><strong>Cover it and write in your own words</strong>
+    <small>Tap the button and the original is hidden on screen. Write it from memory, the way you would say it. The less you peek, the better.</small></div>
+  </div>
+  <div class="step">
+    <div class="num">3</div>
+    <div><strong>Compare</strong>
+    <small>The app shows how much your sentence differs from the original — flagging word-swaps and praising real structural rewrites.</small></div>
+  </div>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+  <summary>My records disappeared.</summary>
+  <p>This app uses no server and stores records only on your device. Deleting the app or resetting the device also removes the records, and they cannot be recovered. We recommend exporting important records using the share feature in the Records tab.</p>
+</details>
+
+<details>
+  <summary>Can I see my records on another device?</summary>
+  <p>Records are stored per device and do not sync automatically. To move them, use Records → Send to teacher → Share.</p>
+</details>
+
+<details>
+  <summary>How do I send records to my teacher?</summary>
+  <p>In the Records tab, tap "Send to teacher", enter a nickname, choose how many entries to send, tap "Create export code", then tap "Share" to send via AirDrop, Messages, or email.</p>
+</details>
+
+<details>
+  <summary>How does a teacher view received records?</summary>
+  <p>Teachers install the same app, open the Together tab, switch to the teacher view, paste the code a student sent, and tap Import. Records appear grouped by student.</p>
+</details>
+
+<details>
+  <summary>Do you collect personal data?</summary>
+  <p>No. There is no sign-up or login, and no advertising or in-app purchases. See our Privacy Policy for details.</p>
+</details>
+
+<div class="contact">
+  <p style="margin:0 0 6px"><strong>Contact</strong></p>
+  <p style="margin:0">For questions or feedback, please email us.<br>
+  <strong>Email:</strong> <code>sonjit4@gmail.com</code></p>
+</div>
+
+</section>
+
+<footer>
+  내 말로! · Nae Mallo!<br>
+  © 2026
+</footer>
+
+</div>
+</body>
+</html>
