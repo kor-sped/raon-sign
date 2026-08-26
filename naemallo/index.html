@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#F2F6F1">
+<title>더 알아보기 · 내 말로!</title>
+<style>
+  :root{
+    --paper:#F2F6F1; --card:#FFFFFF; --ink:#26302A; --sub:#6B7A70;
+    --blue:#2F6BB3; --blue-bg:#EEF4FB; --green:#2E8B57; --green-bg:#EEF8F1;
+    --amber:#C77E14; --amber-bg:#FDF6E9; --line:#DDE5DE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{
+    font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    background:#E4EBE3; color:var(--ink); line-height:1.7; font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .app{max-width:520px;margin:0 auto;min-height:100vh;background:var(--paper);padding:0 20px 64px}
+
+  header{padding:28px 0 18px}
+  .kicker{display:flex;align-items:baseline;gap:8px}
+  .kicker .mark{font-size:24px}
+  .kicker h1{font-size:19px;font-weight:800;letter-spacing:-.02em}
+  .kicker .sub{font-size:12px;color:var(--sub)}
+  .hello{margin-top:14px;font-size:14.5px;color:var(--sub)}
+
+  /* 필터 */
+  .filters{display:flex;gap:8px;flex-wrap:wrap;padding:6px 0 18px;position:sticky;top:0;background:var(--paper);z-index:5}
+  .filters::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(var(--paper),transparent);pointer-events:none}
+  .chip{
+    font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;
+    background:#fff;color:var(--sub);border:1.5px solid var(--line);cursor:pointer;
+  }
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .chip:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+
+  /* 카드 */
+  .list{display:flex;flex-direction:column;gap:12px}
+  .card{
+    display:block;text-decoration:none;color:inherit;background:var(--card);
+    border:1.5px solid var(--line);border-radius:18px;padding:18px 18px 16px;
+    transition:transform .12s ease, border-color .12s ease;
+  }
+  .card:active{transform:scale(.985)}
+  .card:hover{border-color:#C3D3C7}
+  .card:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+  .card .top{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+  .badge{font-size:12px;font-weight:800;padding:3px 10px;border-radius:8px}
+  .s-사회{background:var(--blue-bg);color:var(--blue)}
+  .s-과학{background:var(--green-bg);color:var(--green)}
+  .s-국어{background:var(--amber-bg);color:var(--amber)}
+  .s-방법{background:#EFEAF6;color:#6B4E9E}
+  .s-요약{background:#EAF2F5;color:#1F6B84}
+  .s-기타{background:#EAEFEA;color:var(--sub)}
+  .new{font-size:11px;font-weight:800;color:#fff;background:var(--green);padding:3px 9px;border-radius:999px}
+  .card .date{margin-left:auto;font-size:12px;color:var(--sub)}
+  .card h2{font-size:17px;font-weight:800;letter-spacing:-.01em;line-height:1.45}
+  .card p{font-size:14px;color:var(--sub);margin-top:5px;line-height:1.6}
+  .card .go{margin-top:12px;font-size:13.5px;font-weight:800;color:var(--green)}
+
+  .empty{
+    text-align:center;padding:56px 20px;background:var(--card);
+    border:1.5px solid var(--line);border-radius:18px;
+  }
+  .empty .face{font-size:34px}
+  .empty strong{display:block;margin-top:10px;font-size:16px}
+  .empty span{display:block;margin-top:6px;font-size:14px;color:var(--sub)}
+
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--sub);text-align:center}
+
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div class="kicker">
+      <span class="mark">🙈</span>
+      <h1>더 알아보기</h1>
+      <span class="sub">내 말로!</span>
+    </div>
+    <p class="hello">수업에서 함께 만든 바꿔 쓰기 예제예요. 하나를 골라 열어 보세요.</p>
+  </header>
+
+  <div class="filters" id="filters"></div>
+  <div class="list" id="list"></div>
+
+  <footer>「내 말로!」 학습 자료 · 이 페이지는 계속 늘어납니다</footer>
+</div>
+
+<script src="examples.js"></script>
+<script>
+(function(){
+  var all = (window.EXAMPLES || []).slice();
+  all.sort(function(a,b){ return (b.date||"").localeCompare(a.date||""); });
+
+  var order = ["방법","요약","사회","과학","국어","기타"];
+  var present = order.filter(function(s){
+    return all.some(function(e){ return e.subject === s; });
+  });
+  var subjects = ["전체"].concat(present);
+  var active = "전체";
+
+  var elFilters = document.getElementById("filters");
+  var elList = document.getElementById("list");
+
+  function drawFilters(){
+    elFilters.innerHTML = "";
+    subjects.forEach(function(s){
+      var b = document.createElement("button");
+      b.className = "chip";
+      b.type = "button";
+      b.textContent = s;
+      b.setAttribute("aria-pressed", String(s === active));
+      b.addEventListener("click", function(){ active = s; drawFilters(); drawList(); });
+      elFilters.appendChild(b);
+    });
+  }
+
+  function esc(t){
+    return String(t == null ? "" : t)
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;");
+  }
+
+  function prettyDate(d){
+    if(!d) return "";
+    var p = String(d).split("-");
+    if(p.length < 3) return d;
+    return Number(p[1]) + "월 " + Number(p[2]) + "일";
+  }
+
+  function drawList(){
+    var rows = all.filter(function(e){ return active === "전체" || e.subject === active; });
+    if(rows.length === 0){
+      elList.innerHTML =
+        '<div class="empty"><div class="face">🌱</div>' +
+        '<strong>여기엔 아직 예제가 없어요</strong>' +
+        '<span>다른 과목을 눌러 보세요</span></div>';
+      return;
+    }
+    elList.innerHTML = rows.map(function(e){
+      var sub = order.indexOf(e.subject) >= 0 ? e.subject : "기타";
+      return '' +
+      '<a class="card" href="' + esc(e.file) + '">' +
+        '<div class="top">' +
+          '<span class="badge s-' + esc(sub) + '">' + esc(e.subject || "기타") + '</span>' +
+          (e.tag ? '<span class="new">' + esc(e.tag) + '</span>' : '') +
+          '<span class="date">' + esc(prettyDate(e.date)) + '</span>' +
+        '</div>' +
+        '<h2>' + esc(e.title) + '</h2>' +
+        (e.summary ? '<p>' + esc(e.summary) + '</p>' : '') +
+        '<div class="go">열어 보기 →</div>' +
+      '</a>';
+    }).join("");
+  }
+
+  drawFilters();
+  drawList();
+})();
+</script>
+</body>
+</html>
