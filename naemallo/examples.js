@@ -24,7 +24,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "세 가지 중에 고르기",
     summary: "옮길까, 바꿀까, 줄일까 — 세 개의 길 중에 고르는 법",
-    file: "ex/방법-세가지선택지.html",
+    file: "ex/way-three-choices.html",
     date: "2026-08-26",
     tag: "길잡이"
   },
@@ -33,7 +33,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "바꾸면 안 되는 문장도 있어요",
     summary: "뜻을 정하는 문장은 그대로 옮기고, 설명을 내 말로 붙여요",
-    file: "ex/방법-바꾸면안되는문장.html",
+    file: "ex/way-do-not-change.html",
     date: "2026-08-26",
     tag: "길잡이"
   },
@@ -42,7 +42,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "어려운 문장을 만났을 때",
     summary: "통째로 바꾸려 하지 말고 잘라서 한 조각씩 — 세 단계로 넘어가기",
-    file: "ex/방법-어려운문장-잘라읽기.html",
+    file: "ex/way-cut-hard-sentence.html",
     date: "2026-08-26"
   },
 
@@ -50,7 +50,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "쉬운 말",
     summary: "사전에 있는 말이 아니라 자기 말이 나온다",
-    file: "ex/방법-쉬운말.html",
+    file: "ex/way-easy-words.html",
     date: "2026-08-25"
   },
 
@@ -58,7 +58,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "순서 바꾸기",
     summary: "차례만 바뀌고 뜻은 그대로다",
-    file: "ex/방법-순서바꾸기.html",
+    file: "ex/way-reorder.html",
     date: "2026-08-25"
   },
 
@@ -66,7 +66,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "줄이기",
     summary: "짧아졌는데 뜻이 살아 있다",
-    file: "ex/방법-줄이기.html",
+    file: "ex/way-shorten.html",
     date: "2026-08-25"
   },
 
@@ -74,7 +74,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "뒤집기",
     summary: "뒤집으면 뜻이 달라지는 문장을 골라낸다",
-    file: "ex/방법-뒤집기.html",
+    file: "ex/way-flip.html",
     date: "2026-08-25"
   },
 
@@ -82,7 +82,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "관점 바꾸기",
     summary: "입장은 바뀌었는데 새 정보는 안 들어갔다",
-    file: "ex/방법-관점바꾸기.html",
+    file: "ex/way-viewpoint.html",
     date: "2026-08-25"
   },
 
@@ -90,7 +90,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "예로 바꾸기",
     summary: "예가 원문의 짜임과 같다",
-    file: "ex/방법-예로바꾸기.html",
+    file: "ex/way-example.html",
     date: "2026-08-25"
   },
 
@@ -98,7 +98,7 @@ window.EXAMPLES = [
     subject: "방법",
     title: "한 문장 지우기",
     summary: "왜 그 문장을 지웠는지 한 줄로 말한다",
-    file: "ex/방법-한문장지우기.html",
+    file: "ex/way-drop-one.html",
     date: "2026-08-25"
   },
 
@@ -106,7 +106,7 @@ window.EXAMPLES = [
     subject: "요약",
     title: "덮고 말하기",
     summary: "원문의 낱말이 아니라 뜻이 먼저 나온다",
-    file: "ex/요약-덮고말하기.html",
+    file: "ex/sum-cover-and-say.html",
     date: "2026-08-25"
   },
 
@@ -114,7 +114,7 @@ window.EXAMPLES = [
     subject: "요약",
     title: "세 문장 요약",
     summary: "짧아졌는데 뜻이 살아 있다",
-    file: "ex/요약-세문장요약.html",
+    file: "ex/sum-three-sentences.html",
     date: "2026-08-25"
   },
 
@@ -122,7 +122,7 @@ window.EXAMPLES = [
     subject: "요약",
     title: "묶어서 요약",
     summary: "묶음 이름만 봐도 무슨 얘기였는지 안다",
-    file: "ex/요약-묶어서요약.html",
+    file: "ex/sum-group.html",
     date: "2026-08-25"
   },
 
@@ -130,7 +130,7 @@ window.EXAMPLES = [
     subject: "요약",
     title: "하나로 묶기",
     summary: "예에 없던 낱말로 묶는다",
-    file: "ex/요약-하나로묶기.html",
+    file: "ex/sum-generalize.html",
     date: "2026-08-25"
   },
 
@@ -138,7 +138,7 @@ window.EXAMPLES = [
     subject: "사회",
     title: "조선 후기의 시장과 화폐",
     summary: "맨 뒤에 있던 결과를 맨 앞으로 꺼내 문장 순서를 통째로 뒤집기",
-    file: "ex/사회-조선후기-화폐.html",
+    file: "ex/social-joseon-money.html",
     date: "2026-08-24"
   },
 
