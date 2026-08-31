@@ -1,10 +1,22 @@
 <!DOCTYPE html>
+<!-- ═══════════════════════════════════════════════════════════
+     「내 말로!」 예제 페이지 템플릿
+
+     쓰는 법
+     1) 이 파일을 복사해 ex/ 폴더에 새 이름으로 저장 (예: ex/과학-용해.html)
+     2) 파일 이름은 반드시 영문으로! (예: way-shorten.html)
+        한글 파일명은 웹에서 안 열릴 수 있습니다.
+     3) 아래 <!-- 여기부터 고치세요 --> 부분만 고치면 됩니다.
+     4) examples.js 목록에 한 줄 추가.
+
+     ※ 위쪽 <style> 부분은 손대지 않아도 됩니다.
+     ═══════════════════════════════════════════════════════════ -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#F2F6F1">
-<title>어려운 문장을 만났을 때 · 내 말로!</title>
+<title>예제 제목 · 내 말로!</title>
 <style>
   :root{
     --paper:#F2F6F1; --card:#FFFFFF; --ink:#26302A; --sub:#6B7A70;
@@ -28,6 +40,7 @@
   .s-과학{background:var(--green-bg);color:var(--green)}
   .s-국어{background:var(--amber-bg);color:var(--amber)}
   .s-방법{background:#EFEAF6;color:#6B4E9E}
+  .s-요약{background:#EAF2F5;color:#1F6B84}
   .s-기타{background:#EAEFEA;color:var(--sub)}
   h1{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
   header p{margin-top:8px;font-size:14.5px;color:var(--sub)}
@@ -68,72 +81,50 @@
 
   <a class="back" href="../index.html">← 목록으로</a>
 
+  <!-- ══════════ 여기부터 고치세요 ══════════ -->
+
   <header>
-    <span class="badge s-방법">방법</span>
-    <h1>어려운 문장을 만났을 때</h1>
-    <p>통째로 바꾸려 하지 말고, 잘라서 한 조각씩. 그러면 어려운 문장도 넘어갈 수 있어요.</p>
+    <!-- 과목: s-방법 / s-요약 / s-사회 / s-과학 / s-국어 / s-기타 중 하나로 바꾸세요 -->
+    <span class="badge s-사회">사회</span>
+    <h1>예제 제목을 여기에</h1>
+    <p>이 예제에서 배울 한 가지를 한 줄로 적어요.</p>
   </header>
 
-  <div class="tip" style="margin-top:0">
-    <div class="cap">이런 적 있나요?</div>
-    <p>문장을 읽었는데 무슨 말인지 모르겠고, 그래서 아는 낱말 하나만 붙잡고 대충 써 버린 적. 그건 못해서가 아니라, <b>한 번에 다 하려고 해서</b>예요. 어려운 문장은 잘라야 합니다.</p>
-  </div>
-
-  <h2><span class="n">1</span>이런 문장을 만났어요</h2>
+  <h2><span class="n">1</span>교과서에 있는 문장</h2>
   <div class="box b-원문">
     <div class="cap">원문</div>
-    <p>정부의 물가통계가 피부로 느끼는 물가상승률을 제대로 반영하지 못한다는 불평을 자주 듣는다.</p>
+    <p>교과서 원문을 그대로 옮겨 적으세요.</p>
   </div>
 
-  <h2><span class="n">2</span>이렇게 되기 쉬워요</h2>
+  <h2><span class="n">2</span>이렇게 쓰면 베낀 거예요</h2>
   <div class="box b-나쁨">
-    <div class="cap">🔁 아는 낱말만 붙잡은 예</div>
-    <p>물가통계는 다 틀렸다.</p>
-    <div class="why">'물가통계'라는 덩어리 하나만 남고 나머지는 사라졌어요. 게다가 원문은 <b>"사람들이 불평한다"</b>고 했는데, 이 문장은 <b>"다 틀렸다"</b>고 내가 판단해 버렸어요. 뜻이 달라진 거예요.</div>
+    <div class="cap">🔁 단어만 바꾼 예</div>
+    <p>낱말만 갈아 끼운 문장을 적으세요.</p>
+    <div class="why">왜 안 되는지 한 줄로 적어요.</div>
   </div>
 
-  <h2><span class="n">3</span>잘라서 해 볼까요</h2>
-
-  <div class="tip">
-    <div class="cap">첫째 — 쉼표나 '~는' 앞에서 자르기</div>
-    <ul>
-      <li>정부의 물가통계가</li>
-      <li>피부로 느끼는 물가상승률을 제대로 반영하지 못한다는</li>
-      <li>불평을 자주 듣는다</li>
-    </ul>
-  </div>
-
-  <div class="tip">
-    <div class="cap">둘째 — 조각마다 뜻을 말해 보기</div>
-    <ul>
-      <li>정부가 물가를 재는 숫자가 있다</li>
-      <li>그 숫자가 우리가 실제로 느끼는 것과 다르다</li>
-      <li>사람들이 그걸 불평한다</li>
-    </ul>
-    <p style="margin-top:10px">조각 하나씩은 말할 수 있어요. <b>어려운 건 문장이지 내용이 아니에요.</b></p>
-  </div>
-
+  <h2><span class="n">3</span>이게 진짜 내 말이에요</h2>
   <div class="box b-좋음">
-    <div class="cap">🌟 셋째 — 조각을 이어 붙이기</div>
-    <p>물가가 많이 올랐다고 느끼는데, 정부가 내놓는 숫자는 그만큼 안 올랐다고 나온다. 그래서 사람들이 불만을 말한다.</p>
-    <div class="why">💡 세 조각이 다 살아 있고, '불평한다'는 원문의 뜻도 지켜졌어요. 문장 순서도 원문과 달라졌고요.</div>
+    <div class="cap">🌟 진짜 바꿔 쓴 예</div>
+    <p>구조까지 바꾼 문장을 적으세요.</p>
+    <div class="why">💡 무엇을 어떻게 바꿨는지 적어요.</div>
   </div>
 
-  <div class="tip" style="background:#fff;border-color:var(--line)">
-    <div class="cap" style="color:var(--ink)">꼭 기억할 것</div>
-    <p><b>다 담지 못해도 괜찮아요.</b> 대신 원문이 진짜 말하려는 것이 빠지지 않았는지만 확인해요.</p>
+  <div class="tip">
+    <div class="cap">이 문장에 쓴 방법</div>
+    <p>어떤 요령을 썼는지 설명해요. 아래처럼 목록으로 써도 좋아요.</p>
     <ul>
-      <li>원문이 말한 것을 <b>내가 판단한 것</b>으로 바꾸지 않았나요?<br><span style="color:var(--sub);font-size:13.5px">(불평한다 → 다 틀렸다 ✗)</span></li>
-      <li>가장 중요한 낱말이 빠지지 않았나요?</li>
-      <li>조각 중에 아예 사라진 게 있나요?</li>
+      <li>뒷부분을 맨 앞으로 꺼내기</li>
+      <li>내가 아는 예시 붙이기</li>
     </ul>
   </div>
 
   <div class="try">
     <strong>이제 앱에서 직접 해 볼까요?</strong>
-    <span>어려운 문장을 만나면, 먼저 잘라 보세요.</span>
+    <span>앱으로 돌아가 이 문장을 내 말로 바꿔 써 보세요.</span>
   </div>
 
+  <!-- ══════════ 여기까지 ══════════ -->
 
   <footer>「내 말로!」 학습 자료</footer>
 </div>
